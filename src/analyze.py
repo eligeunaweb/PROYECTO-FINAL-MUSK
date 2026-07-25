@@ -1,10 +1,10 @@
 import json
 import pandas as pd
-from client import Client
-from sale import Sale
-from client_collection import ClientCollection
-from sales_collection import SalesCollection
-from functional_utils import filter_sales_by_category, filter_sales_by_client, get_amounts
+from src.client import Client
+from src.sale import Sale
+from src.client_collection import ClientCollection
+from src.sales_collection import SalesCollection
+from src.functional_utils import filter_sales_by_category, filter_sales_by_client, get_amounts
 
 # Leer clientes desde JSON
 with open("../data/clients.json", "r") as f:
@@ -121,4 +121,3 @@ with open("../data/report.json", "w") as f:
     json.dump(informe, f, indent=4)
 
 print("Informe generado correctamente en ../data/report.json")
-

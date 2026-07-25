@@ -1,4 +1,4 @@
-from sale import Sale
+from src.sale import Sale
 
 class SalesCollection:
     def __init__(self, sales):
