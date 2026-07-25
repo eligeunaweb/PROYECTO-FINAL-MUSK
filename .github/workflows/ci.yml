@@ -16,6 +16,6 @@ jobs:
         pip install -r requirements.txt
         pip install pytest
     - name: Run tests
-      run: |
-        export PYTHONPATH=/home/runner/work/PROYECTO-FINAL-MUSK/PROYECTO-FINAL-MUSK
-        pytest -q
+      env:
+        PYTHONPATH: /home/runner/work/PROYECTO-FINAL-MUSK/PROYECTO-FINAL-MUSK
+      run: pytest -q
