@@ -15,7 +15,6 @@ jobs:
       run: |
         pip install -r requirements.txt
         pip install pytest
+        pip install -e .
     - name: Run tests
-      run: |
-        cd $GITHUB_WORKSPACE
-        PYTHONPATH=$GITHUB_WORKSPACE pytest -q
+      run: pytest -q

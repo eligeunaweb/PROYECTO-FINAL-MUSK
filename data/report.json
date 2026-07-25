@@ -28,9 +28,9 @@
         }
     ],
     "top_client_by_country": {
-        "Spain": "Alice",
+        "France": "Carol",
         "Germany": "Bob",
-        "France": "Carol"
+        "Spain": "Alice"
     },
     "sales_by_category": {
         "Accessories": 339.97,
